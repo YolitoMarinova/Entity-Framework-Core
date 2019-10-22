@@ -1,0 +1,10 @@
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\bin\Debug\netcoreapp2.2\01.InitialSetup.deps.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\bin\Debug\netcoreapp2.2\01.InitialSetup.runtimeconfig.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\bin\Debug\netcoreapp2.2\01.InitialSetup.runtimeconfig.dev.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\bin\Debug\netcoreapp2.2\01.InitialSetup.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\obj\Debug\netcoreapp2.2\01.InitialSetup.csprojAssemblyReference.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\obj\Debug\netcoreapp2.2\01.InitialSetup.AssemblyInfoInputs.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\obj\Debug\netcoreapp2.2\01.InitialSetup.AssemblyInfo.cs
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\bin\Debug\netcoreapp2.2\01.InitialSetup.pdb
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\obj\Debug\netcoreapp2.2\01.InitialSetup.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\01.InitialSetup\obj\Debug\netcoreapp2.2\01.InitialSetup.pdb

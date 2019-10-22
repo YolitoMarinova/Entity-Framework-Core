@@ -1,0 +1,4 @@
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\03.MinionNames\bin\Debug\netcoreapp3.0\03.MinionNames.exe
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\03.MinionNames\obj\Debug\netcoreapp3.0\03.MinionNames.csprojAssemblyReference.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\03.MinionNames\obj\Debug\netcoreapp3.0\03.MinionNames.AssemblyInfoInputs.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\Fetching Resultsets with ADO.NET\Introduction to DB Apps\03.MinionNames\obj\Debug\netcoreapp3.0\03.MinionNames.AssemblyInfo.cs
