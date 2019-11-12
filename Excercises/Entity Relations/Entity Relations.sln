@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_StudentSystem", "StudentSystem\P01_StudentSystem.csproj", "{29DBFAED-8320-4EAD-AE19-0F00476469F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_StudentSystem", "StudentSystem\P01_StudentSystem.csproj", "{29DBFAED-8320-4EAD-AE19-0F00476469F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Footbal Betting", "Footbal Betting", "{BC267BFF-CA2D-48E0-805E-2BC16A59365B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_FootballBetting", "P03_FootballBetting\P03_FootballBetting.csproj", "{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_FootballBetting.Data", "P03_FootballBetting.Data\P03_FootballBetting.Data.csproj", "{09916995-C041-4384-B35D-CA828F7C9045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_FootballBetting.Data.Models", "P03_FootballBetting.Data.Models\P03_FootballBetting.Data.Models.csproj", "{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,26 @@ Global
 		{29DBFAED-8320-4EAD-AE19-0F00476469F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29DBFAED-8320-4EAD-AE19-0F00476469F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29DBFAED-8320-4EAD-AE19-0F00476469F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09916995-C041-4384-B35D-CA828F7C9045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09916995-C041-4384-B35D-CA828F7C9045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09916995-C041-4384-B35D-CA828F7C9045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09916995-C041-4384-B35D-CA828F7C9045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2B52502-C955-4BA7-BECC-A2A2B2DA65F7} = {BC267BFF-CA2D-48E0-805E-2BC16A59365B}
+		{09916995-C041-4384-B35D-CA828F7C9045} = {BC267BFF-CA2D-48E0-805E-2BC16A59365B}
+		{09D0A7AB-9E8D-49DC-A9DB-D0472EE4FF6C} = {BC267BFF-CA2D-48E0-805E-2BC16A59365B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {183D66E0-E801-48E1-9B8D-C96A068FE31E}
