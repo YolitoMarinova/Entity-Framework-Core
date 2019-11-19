@@ -1,0 +1,8 @@
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Excercises\C# Auto Mapping Objects\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csprojAssemblyReference.cache
