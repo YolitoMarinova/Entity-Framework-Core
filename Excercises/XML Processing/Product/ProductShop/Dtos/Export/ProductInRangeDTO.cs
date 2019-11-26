@@ -1,7 +1,7 @@
-﻿using System.Xml.Serialization;
-
-namespace ProductShop.Dtos.Export
+﻿namespace ProductShop.Dtos.Export
 {
+    using System.Xml.Serialization;
+
     [XmlType("Product")]
     public class ProductInRangeDTO
     {
