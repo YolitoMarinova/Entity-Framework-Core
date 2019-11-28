@@ -15,7 +15,6 @@
         public long TravelledDistance { get; set; }
 
        [XmlArray("parts")]
-       [XmlArrayItem("partId")]
         public ImportPartIdDTO[] PartsId { get; set; }
     }
 }

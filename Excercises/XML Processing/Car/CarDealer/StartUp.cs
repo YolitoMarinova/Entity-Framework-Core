@@ -2,6 +2,7 @@
 namespace CarDealer
 {
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using CarDealer.Dtos.Export;
     using CarDealer.Dtos.Import;
     using CarDealer.Models;
@@ -23,7 +24,7 @@ namespace CarDealer
                 //db.Database.EnsureDeleted();
                 //db.Database.EnsureCreated();
 
-                var inputXml = File.ReadAllText("../../../Datasets/customers.xml");
+                //var inputXml = File.ReadAllText("../../../Datasets/sales.xml");
 
                 var result = GetSalesWithAppliedDiscount(db);
 
@@ -77,36 +78,41 @@ namespace CarDealer
         public static string ImportCars(CarDealerContext context, string inputXml)
         {
             var xmlSerializer = new XmlSerializer(typeof(CarImportDTO[]), new XmlRootAttribute("Cars"));
+
             var carsDto = (CarImportDTO[])xmlSerializer.Deserialize(new StringReader(inputXml));
 
             List<Car> cars = new List<Car>();
+            List<PartCar> partsCars = new List<PartCar>();
 
             foreach (var carDto in carsDto)
             {
                 var car = Mapper.Map<Car>(carDto);
 
-                context.Cars.Add(car);
+                var parts = carDto
+                    .PartsId
+                    .Select(pdto => pdto.PartId)
+                    .Where(pdto => context.Parts.Any(p => p.Id == pdto))
+                    .Distinct()
+                    .ToArray();
 
-                foreach (var part in carDto.PartsId)
+                foreach (var partId in parts)
                 {
-                    if (car.PartCars
-                        .FirstOrDefault(p => p.PartId == part.PartId) == null &&
-                        context.Parts.Find(part.PartId) != null)
+                    var partCar = new PartCar
                     {
-                        var partCar = new PartCar
-                        {
-                            CarId = car.Id,
-                            PartId = part.PartId
-                        };
+                        Car = car,
+                        PartId = partId
+                    };
 
-                        car.PartCars.Add(partCar);
-                    }
+                    partsCars.Add(partCar);
                 }
 
                 cars.Add(car);
             }
 
-            int count = context.SaveChanges();
+            context.Cars.AddRange(cars);
+            context.PartCars.AddRange(partsCars);
+
+            context.SaveChanges();
 
             return $"Successfully imported {cars.Count()}";
         }
@@ -158,14 +164,9 @@ namespace CarDealer
             var cars = context
                     .Cars
                     .Where(c => c.TravelledDistance > 2000000)
-                    .Select(c => new CarWithDistanceDTO
-                    {
-                        Make = c.Make,
-                        Model = c.Model,
-                        TravelledDistance = c.TravelledDistance
-                    })
                     .OrderBy(c => c.Make)
                     .ThenBy(c => c.Model)
+                    .ProjectTo<CarWithDistanceDTO>()
                     .Take(10)
                     .ToArray();
 
@@ -186,12 +187,7 @@ namespace CarDealer
             var cars = context
                         .Cars
                         .Where(c => c.Make == "BMW")
-                        .Select(c => new CarFromBMWDTO
-                        {
-                            Id = c.Id,
-                            Model = c.Model,
-                            TravelledDistance = c.TravelledDistance
-                        })
+                        .ProjectTo<CarFromBMWDTO>()
                         .OrderBy(c => c.Model)
                         .ThenByDescending(c => c.TravelledDistance)
                         .ToArray();
@@ -213,12 +209,7 @@ namespace CarDealer
             var suplpiers = context
                             .Suppliers
                             .Where(s => !s.IsImporter)
-                            .Select(s => new LocalSuppliersDTO
-                            {
-                                Id = s.Id,
-                                Name = s.Name,
-                                PartsCount = s.Parts.Count
-                            })
+                            .ProjectTo<LocalSuppliersDTO>()
                             .ToArray();
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(LocalSuppliersDTO[]), new XmlRootAttribute("suppliers"));
@@ -237,22 +228,10 @@ namespace CarDealer
         {
             var cars = context
                            .Cars
-                           .Select(c => new CarsWIthListOfPartsDTO
-                           {
-                               Make = c.Make,
-                               Model = c.Model,
-                               TravelledDistance = c.TravelledDistance,
-                               Parts = c.PartCars.Select(p => new PartsExportDTO
-                               {
-                                   Name = p.Part.Name,
-                                   Price = p.Part.Price
-                               })
-                               .OrderByDescending(p => p.Price)
-                               .ToArray()
-                           })
                            .OrderByDescending(c => c.TravelledDistance)
                            .ThenBy(c => c.Model)
                            .Take(5)
+                           .ProjectTo<CarsWIthListOfPartsDTO>()
                            .ToArray();
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(CarsWIthListOfPartsDTO[]), new XmlRootAttribute("cars"));
@@ -272,12 +251,7 @@ namespace CarDealer
             var customers = context
                                .Customers
                                .Where(c => c.Sales.Count > 0)
-                               .Select(c => new CustomerBoughtsDTO
-                               {
-                                   FullName = c.Name,
-                                   BoughtCars = c.Sales.Count,
-                                   TotalSpentMoney = c.Sales.Sum(s => s.Car.PartCars.Sum(p => p.Part.Price))
-                               })
+                               .ProjectTo<CustomerBoughtsDTO>()
                                .OrderByDescending(c => c.TotalSpentMoney)
                                .ToArray();
 
@@ -296,21 +270,9 @@ namespace CarDealer
         public static string GetSalesWithAppliedDiscount(CarDealerContext context)
         {
             var sales = context
-                               .Sales
-                               .Select(s => new SaleExportDTO
-                               {
-                                   Car = new CarSaleExportDTO
-                                   {
-                                       Make = s.Car.Make,
-                                       Model = s.Car.Model,
-                                       TravelledDistance = s.Car.TravelledDistance
-                                   },
-                                   Discount = s.Discount,
-                                   CustomerName = s.Customer.Name,
-                                   Price = s.Car.PartCars.Sum(p => p.Part.Price),
-                                   PriceWithDiscount = s.Car.PartCars.Sum(p => p.Part.Price) - ((s.Car.PartCars.Sum(p => p.Part.Price) * s.Discount)/100)
-                               })
-                               .ToArray();
+                          .Sales
+                          .ProjectTo<SaleExportDTO>()
+                          .ToArray();
 
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(SaleExportDTO[]), new XmlRootAttribute("sales"));
 
