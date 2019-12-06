@@ -1,0 +1,9 @@
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\bin\Debug\netcoreapp2.1\MusicHub.deps.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\bin\Debug\netcoreapp2.1\MusicHub.runtimeconfig.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\bin\Debug\netcoreapp2.1\MusicHub.runtimeconfig.dev.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\bin\Debug\netcoreapp2.1\MusicHub.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\bin\Debug\netcoreapp2.1\MusicHub.pdb
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\obj\Debug\netcoreapp2.1\MusicHub.AssemblyInfoInputs.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\obj\Debug\netcoreapp2.1\MusicHub.AssemblyInfo.cs
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\obj\Debug\netcoreapp2.1\MusicHub.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\ExamPreparations\C# DB Advanced Exam - 18.04.2019\MusicHub\obj\Debug\netcoreapp2.1\MusicHub.pdb
