@@ -1,0 +1,9 @@
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\bin\Debug\netcoreapp2.1\TeisterMask.deps.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\bin\Debug\netcoreapp2.1\TeisterMask.runtimeconfig.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\bin\Debug\netcoreapp2.1\TeisterMask.runtimeconfig.dev.json
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\bin\Debug\netcoreapp2.1\TeisterMask.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\bin\Debug\netcoreapp2.1\TeisterMask.pdb
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\obj\Debug\netcoreapp2.1\TeisterMask.AssemblyInfoInputs.cache
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\obj\Debug\netcoreapp2.1\TeisterMask.AssemblyInfo.cs
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\obj\Debug\netcoreapp2.1\TeisterMask.dll
+C:\Users\ioan4\Desktop\SoftUni\Entity Framework Core\Exam\C# DB Advanced Exam - 07.12.2019\TeisterMask\obj\Debug\netcoreapp2.1\TeisterMask.pdb
